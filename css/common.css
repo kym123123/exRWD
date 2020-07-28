@@ -209,19 +209,26 @@ legend,
 .appFooter{
   width:100%;
 }
-/* 모바일 헤더 */
+/* 공통 헤더 */
 .appHeader{
   background-color: #c0c0c0;
+  display: grid;
 }
-/* 모바일 내비게이션 */
+.memberOnly{
+  color:#fff;
+  display: flex;
+  flex-flow:row nowrap;
+  justify-content: flex-end;
+}
+/* 공통 내비게이션 */
 .appNavigation{
   background-color: purple;
 }
-/* 모바일 메인 콘텐츠 */
+/* 공통 메인 콘텐츠 */
 .appMain{
   background-color: lime;
 }
-/* 모바일 푸터 */
+/* 공통 푸터 */
 .appFooter{
   background-color: orange;
 }
