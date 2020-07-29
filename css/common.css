@@ -234,10 +234,6 @@ input[type="search"]{
   border-radius: 5px;
   padding:2px 5px;
 }
-/* 공통 내비게이션 */
-.appNavigation{
-  background-color: purple;
-}
 /* 공통 메인 콘텐츠 */
 .appMain{
   background-color: lime;
