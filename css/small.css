@@ -1,7 +1,6 @@
 /* 모바일 기본 글자 크기 */
 body{
   font-size:1.5rem;
-  background-color: pink;
 }
 /* 모바일 레이아웃 */
 .appHeader,.appMain{
@@ -32,10 +31,6 @@ body{
 /* 모바일 검색 폼 */
 input[type="search"]{
   width:calc(100% - 50px);
-  height:35px;
-  border:1px solid #aaa;
-  border-radius: 5px;
-  padding:2px 5px;
   margin:5px;
 }
 .buttonSearch{
@@ -43,6 +38,17 @@ input[type="search"]{
   height: 35px;
   border:0;
   padding: 0;
+  position: relative;
+  background-color: transparent;
+}
+.buttonSearch::after{
+  content:"";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+  height:100%;
+  background: url(./images/btn_search.png) 0 0 / cover no-repeat scroll;
 }
 /* 모바일 내비게이션 */
 .appNavigation{

@@ -1,7 +1,6 @@
 /* 데스크탑 기본 글자 크기 */
 body{
   font-size:1.4rem;
-  background-color:yellow;
 }
 /* 데스크탑 레이아웃 */
 .container{
@@ -18,8 +17,32 @@ body{
 .memberOnly{
 
 }
+/* 데스크탑 검색폼 */
+.searchForm{
+  /* header의 grid item으로서 area설정 */
+  grid-area:2/2/3/3;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap:10px;
+}
+.searchForm fieldset{
+  display:contents;
+}
+/* }
 .resetBox{
-
+  display: grid;
+  grid-template-rows:100%;
+  grid-template-columns: 1fr auto;
+}
+.resetBox input{
+  margin-right:3px;
+} */
+.buttonSearch{
+  border:1px solid #aaa;
+  border-radius: 5px;
+  padding:2px 10px;
+  background-color: #988574;
+  color:#fff;
 }
 .appNavigation{
   width:100%;
@@ -39,7 +62,7 @@ body{
 }
 /* 데스크탑 검색폼 */
 .searchForm{
-  text-align:right;
+  /* text-align:right; */
   background-color: lime;
   grid-area:2/2/3/3;
 }
