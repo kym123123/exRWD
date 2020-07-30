@@ -128,13 +128,12 @@ body{
   grid-gap:20px;
 }
 .appMain,.appHeader,.menu__list{
-  width:100%;
+  width:1000px;
   margin:0 auto;
 }
 /* 데스크탑 추천 서적 */
 .book{
   grid-area:1/1/2/span 4;
-  padding:10px;
 }
 .book__cover{
   margin-left:40px;
