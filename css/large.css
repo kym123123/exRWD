@@ -7,8 +7,13 @@ body{
   justify-content: center;
 }
 .appHeader,
-.appMain{
-  width:1000px;
+.appMain,
+.menu__list{
+  width:78.125%;
+  /* 1000px(내가정한 블록크기)/1280px(화면전체픽셀크기) 
+  디바이스마다 화면크기가 다르니까 1000/1280비율을 width로 
+  설정해둔다.*/
+  max-width:1800px;
 }
 .appHeader{
 }
@@ -126,10 +131,6 @@ body{
   column-gap:20px;
   grid-template: auto / repeat(12,1fr);
   grid-gap:20px;
-}
-.appMain,.appHeader,.menu__list{
-  width:1000px;
-  margin:0 auto;
 }
 /* 데스크탑 추천 서적 */
 .book{
