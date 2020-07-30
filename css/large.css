@@ -63,7 +63,6 @@ body{
 /* 데스크탑 검색폼 */
 .searchForm{
   /* text-align:right; */
-  background-color: lime;
   grid-area:2/2/3/3;
 }
 /* 데스크탑 내비게이션 */
