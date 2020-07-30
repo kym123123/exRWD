@@ -64,7 +64,10 @@
 .icon-git-squared:before {
   content: '\f1d2';
 }
-
+/* .responsive{
+  max-width: 100%;
+  height:auto;
+} */
 *,*::before,*::after{
   box-sizing: border-box;
 }
@@ -271,6 +274,12 @@ legend,
   padding: 0;
   background: transparent;
 }
+/* 공통 반응형 콘텐츠 */
+.responsive{
+  max-width: 100%;
+  /* 파이어폭스에서 버그가 있엇기 때문에 height:auto도 기입 */
+  height:auto;
+}
 /* 공통 레이아웃 */
 .container{
   display: flex;
@@ -302,8 +311,125 @@ input[type="search"]{
 }
 /* 공통 메인 콘텐츠 */
 .appMain{
-  background-color: lime;
 }
+.appMain [class*="__title"]{
+  padding-left:65px;
+  font-size:1.5rem;
+  margin:0;
+  min-height:60px;
+}
+.appMain [class*="__enTitle"]{
+  display: block;
+  margin-top:5px; 
+}
+.sprite{
+  background-image: url(./images/sprite_main.png);
+  background-repeat: no-repeat;
+}
+.spriteBook{
+  background-position: 0 0;
+}
+.spriteNews{
+  background-position: 0 -230px;
+}
+.spriteBoard{
+  background-position: 0 -115px;
+}
+.spriteFavorite{
+  background-position: 0 -345px;
+}
+.spriteTwitter{
+  background-position: 0 -460px;
+}
+
+.themeGreen {
+  color: #abd375;
+}
+.themeYellow {
+  color: #e8ca58;
+}
+.themeBrown {
+  color: #c7b39a;
+}
+.themeSkyblue {
+  color: #6aaee6;
+}
+.themeOrange {
+  color: #eea60a;
+}
+.appMain [class*="__summary"]{
+  line-height: 1.5;
+}
+/* 공통 메인 콘텐츠 섹션 제목  내가 짠코드 */
+/* 공통추천서적 */
+.book{
+}
+.book__cover{
+  margin:15px 20px;
+  text-align: center;
+}
+.book__cover figcaption{
+  margin:10px 0;
+}
+.book__info{
+  margin:15px 0;
+  text-align: center;
+}
+.book__info dt{
+
+}
+.book__info dd{
+  margin-left: 0;
+}
+.book__info *{
+  display: inline-block;
+}
+.book__info dd[aria-label]{
+  display: block;
+  font-size:2.5rem;
+  font-weight: 700;
+}
+/* .appMain section, .appMain article{
+  padding-top:10px;
+  display:flex;
+  flex-flow:row nowrap;
+}
+.appMain section::before, .appMain article::before{
+  display:block;
+  content:"";
+  width:58px;
+  height:59px;
+  background-position: 0 0px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(./images/sprite_main.png); 
+ 
+/* 새소식 */
+/*
+.appMain .news::before{
+  background-position: 0 -229px; 
+}
+.appMain .board::before{
+  background-position: 0 -114px; 
+}
+.appMain .favorite::before{
+  background-position: 0 -345px;
+}
+.appMain .twitter::before{
+  background-position: 0 -460px;
+}
+.sprite{
+  padding-left:10px;
+  font-size:1.7rem;
+}
+.themeGreen,.themeYellow,.themeBrown,.themeOrange,.themeSkyblue{
+  display:block;
+}
+.themeGreen{color: green;}
+.themeYellow{color: yellow;}
+.themeBrown{color: brown;}
+.themeOrange{color: orange;}
+.themeSkyblue{color: skyblue;} */
 /* 공통 푸터 */
 .appFooter{
   background-color: orange;
