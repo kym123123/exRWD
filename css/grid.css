@@ -8,8 +8,6 @@
   height: 100vh;
 }
 
-
-
 @media screen and (min-width : 320px) and (max-width:999px){
   /* 모바일 그리드 시스템 */
   .gridSystem.isActive{

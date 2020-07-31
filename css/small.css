@@ -168,6 +168,14 @@ input[type="search"]{
   left:10em;
   /* 열글자 만큼 안으로 들여써서 시작 */
 }
+/* 공통 트위터 */
+.twitter__userProfile{
+  text-align : right;
+}
 /* 모바일 푸터 */
 .appFooter{
+  line-height: 2;
+}
+.address span{
+  display:block;
 }
