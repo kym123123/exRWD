@@ -438,7 +438,6 @@ video.responsive{
   width:100%;
 }
 .news{
-  background-color: pink;
 }
 .news__videoContainer{
   margin:15px 20px;
@@ -474,6 +473,109 @@ iframe{
   width:100%;
   height:100%;
 }
+/* 공통 게시판 */
+.board{
+  font-size: 1.5rem;
+  position: relative;
+}
+.board__list{
+  margin-top:10px;
+  padding-left: 20px;
+  margin:15px 0;
+}
+.board__list li{
+  display: flex;
+  flex-flow: row nowrap;
+  margin:15px 0;
+  flex-flow:row nowrap;
+}
+.board__list a{
+  margin:0 10px 0 5px;
+  flex-grow: 1;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.board__list time{
+}
+.board__more{
+  padding:10px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+/* 공통인기사이트 */
+.favorite__list{
+  padding-left:20px;
+}
+.favorite__list li{
+  counter-increment:number;
+  margin:10px 0;
+  display:flex;
+  flex-flow: row nowrap;
+}
+.favorite__list li::before{
+  content:counter(number);
+  color:#fff;
+  background-color: #eea60a;
+  padding:2px 6px;
+  margin-right: 5px;
+  display: inline-block;
+  border-radius: 50%;
+}
+.favorite__list a{
+  position: relative;
+  flex-grow: 1;
+}
+.favorite__list a:hover::before, 
+.favorite__list a:focus::before{
+  content:attr(data-tooltip);
+  position: absolute;
+  top:1em;
+  background-color: #eea60a;
+  border:1px solid #aaa;
+  padding:5px;
+  z-index:100;
+  color:#fff;
+  box-shadow: 2px 2px 0 0 #000;
+}
+/* 공통 인기 사이트 내코드
+.favorite__list{
+  margin-top: 10px;
+  padding-left:40px;
+  counter-reset: number;
+}
+.favorite__list li{
+  padding:5px;
+}
+.favorite__list li::before{
+  counter-increment:number;
+  content:counter(number);
+  padding:5px 10px;
+  display:inline-block;
+  border-radius: 50%;
+  color:white;
+  background-color: #eea60a;
+  margin-right:5px;
+  border:1px solid red;
+}
+.favorite__list li a{
+  position: relative;
+}
+.favorite__list li a:hover::after{
+  content:attr(data-tooltip);
+  display: inline-block;
+  position:absolute;
+  color:white;
+  z-index: 1;
+  top:20px;
+  left:100px;
+  white-space: nowrap;
+  border:1px solid lightgray;
+  padding:5px 10px;
+  background-color: rgb(231, 136, 101);
+  box-shadow: 2px 2px 0 gray;
+} */
 /* 공통 푸터 */
 .appFooter{
   background-color: orange;

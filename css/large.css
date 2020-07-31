@@ -13,6 +13,7 @@ body{
   /* 1000px(내가정한 블록크기)/1280px(화면전체픽셀크기) 
   디바이스마다 화면크기가 다르니까 1000/1280비율을 width로 
   설정해둔다.*/
+  min-width:1000px;
   max-width:1800px;
 }
 .appHeader{
@@ -152,7 +153,11 @@ body{
 /* 데스크탑 인기사이트  */
 .favorite{
   grid-area: 2/10/3/span 3;
-  background-color: red;
+}
+
+.favorite__list a:hover::before, 
+.favorite__list a:focus::before{
+  right:-10px;
 }
 /* 데스크탑 트위터 */
 .twitter{
